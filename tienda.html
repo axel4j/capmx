@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - CAP MX</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+   
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="pres.html">Cálculo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tienda">
+        <h2>Tienda</h2>
+        <p>En nuestra tienda online puedes adquirir todos los productos necesarios para la instalación de tu sistema de captación de agua pluvial.</p>
+        
+    </section>
+
+    <div class="container">
+        <!-- Canaletas -->
+        <div class="product">
+            <h3>Canaletas (10 m)</h3>
+            <img src="canaleta.jpg" alt="Canaletas">
+            <p>Elige una opción:</p>
+            <div class="product-options">
+                <label for="canaletas-option">Precio:</label>
+                <select id="canaletas-option">
+                    <option value="500">Opción 1: $500 MXN</option>
+                    <option value="1500">Opción 2: $1,500 MXN</option>
+                </select>
+            </div>
+            <div class="price">Precio: $<span id="canaletas-price">500</span> MXN</div>
+            <button class="button" onclick="addToCart('Canaletas', 500)">Agregar al carrito</button>
+        </div>
+    
+        <!-- Tuberías de bajada -->
+        <div class="product">
+            <h3>Tuberías de bajada (5 m)</h3>
+            <img src="tuberia.jpg" alt="Tubería de bajada">
+            <p>Elige una opción:</p>
+            <div class="product-options">
+                <label for="tuberia-option">Precio:</label>
+                <select id="tuberia-option">
+                    <option value="75">Opción 1: $75 MXN</option>
+                    <option value="300">Opción 2: $300 MXN</option>
+                </select>
+            </div>
+            <div class="price">Precio: $<span id="tuberia-price">75</span> MXN</div>
+            <button class="button" onclick="addToCart('Tuberías de bajada', 75)">Agregar al carrito</button>
+        </div>
+    
+        <!-- Filtro de entrada -->
+        <div class="product">
+            <h3>Filtro de entrada</h3>
+            <img src="filtro.jpg" alt="Filtro de entrada">
+            <p>Elige una opción:</p>
+            <div class="product-options">
+                <label for="filtro-option">Precio:</label>
+                <select id="filtro-option">
+                    <option value="100">Opción 1: $100 MXN</option>
+                    <option value="300">Opción 2: $300 MXN</option>
+                </select>
+            </div>
+            <div class="price">Precio: $<span id="filtro-price">100</span> MXN</div>
+            <button class="button" onclick="addToCart('Filtro de entrada', 100)">Agregar al carrito</button>
+        </div>
+    
+        <!-- Tanque de almacenamiento -->
+        <div class="product">
+            <h3>Tanque de almacenamiento (1000 L)</h3>
+            <img src="tanque.jpg" alt="Tanque de almacenamiento">
+            <p>Elige una opción:</p>
+            <div class="product-options">
+                <label for="tanque-option">Precio:</label>
+                <select id="tanque-option">
+                    <option value="1200">Opción 1: $1,200 MXN</option>
+                    <option value="2500">Opción 2: $2,500 MXN</option>
+                </select>
+            </div>
+            <div class="price">Precio: $<span id="tanque-price">1200</span> MXN</div>
+            <button class="button" onclick="addToCart('Tanque de almacenamiento', 1200)">Agregar al carrito</button>
+        </div>
+    
+        <!-- Válvula de desbordamiento -->
+        <div class="product">
+            <h3>Válvula de desbordamiento</h3>
+            <img src="valvula.jpg" alt="Válvula de desbordamiento">
+            <p>Elige una opción:</p>
+            <div class="product-options">
+                <label for="valvula-option">Precio:</label>
+                <select id="valvula-option">
+                    <option value="50">Opción 1: $50 MXN</option>
+                    <option value="150">Opción 2: $150 MXN</option>
+                </select>
+            </div>
+            <div class="price">Precio: $<span id="valvula-price">50</span> MXN</div>
+            <button class="button" onclick="addToCart('Válvula de desbordamiento', 50)">Agregar al carrito</button>
+        </div>
+    
+        <!-- Conexiones y accesorios -->
+        <div class="product">
+            <h3>Conexiones y accesorios</h3>
+            <img src="accesorios.jpg" alt="Conexiones y accesorios">
+            <p>Elige una opción:</p>
+            <div class="product-options">
+                <label for="accesorios-option">Precio:</label>
+                <select id="accesorios-option">
+                    <option value="100">Opción 1: $100 MXN</option>
+                    <option value="300">Opción 2: $300 MXN</option>
+                </select>
+            </div>
+            <div class="price">Precio: $<span id="accesorios-price">100</span> MXN</div>
+            <button class="button" onclick="addToCart('Conexiones y accesorios', 100)">Agregar al carrito</button>
+        </div>
+    
+        <!-- Pegamento y cinta selladora -->
+        <div class="product">
+            <h3>Pegamento y cinta selladora</h3>
+            <img src="pegamento.jpg" alt="Pegamento y cinta selladora">
+            <p>Elige una opción:</p>
+            <div class="product-options">
+                <label for="pegamento-option">Precio:</label>
+                <select id="pegamento-option">
+                    <option value="50">Opción 1: $50 MXN</option>
+                    <option value="100">Opción 2: $100 MXN</option>
+                </select>
+            </div>
+            <div class="price">Precio: $<span id="pegamento-price">50</span> MXN</div>
+            <button class="button" onclick="addToCart('Pegamento y cinta selladora', 50)">Agregar al carrito</button>
+        </div>
+    
+        <!-- Soportes para canaletas -->
+        <div class="product">
+            <h3>Soportes para canaletas</h3>
+            <img src="soportes.jpg" alt="Soportes para canaletas">
+            <p>Elige una opción:</p>
+            <div class="product-options">
+                <label for="soportes-option">Precio:</label>
+                <select id="soportes-option">
+                    <option value="100">Opción 1: $100 MXN</option>
+                    <option value="300">Opción 2: $300 MXN</option>
+                </select>
+            </div>
+            <div class="price">Precio: $<span id="soportes-price">100</span> MXN</div>
+            <button class="button" onclick="addToCart('Soportes para canaletas', 100)">Agregar al carrito</button>
+        </div>
+    
+        <!-- Manguera de salida -->
+        <div class="product">
+            <h3>Manguera de salida (opcional)</h3>
+            <img src="manguera.jpg" alt="Manguera de salida">
+            <p>Elige una opción:</p>
+            <div class="product-options">
+                <label for="manguera-option">Precio:</label>
+                <select id="manguera-option">
+                    <option value="100">Opción 1: $100 MXN</option>
+                    <option value="300">Opción 2: $300 MXN</option>
+                </select>
+            </div>
+            <div class="price">Precio: $<span id="manguera-price">100</span> MXN</div>
+            <button class="button" onclick="addToCart('Manguera de salida', 100)">Agregar al carrito</button>
+        </div>
+    
+        <!-- Herramientas -->
+        <div class="product">
+            <h3>Herramientas (si no las tienes)</h3>
+            <img src="herramientas.jpg" alt="Herramientas">
+            <p>Elige una opción:</p>
+            <div class="product-options">
+                <label for="herramientas-option">Precio:</label>
+                <select id="herramientas-option">
+                    <option value="200">Opción 1: $200 MXN</option>
+                    <option value="2000">Opción 2: $2,000 MXN</option>
+                </select>
+            </div>
+            <div class="price">Precio: $<span id="herramientas-price">200</span> MXN</div>
+            <button class="button" onclick="addToCart('Herramientas', 200)">Agregar al carrito</button>
+        </div>
+    </div>
+    
+    <!-- Carrito -->
+    <div id="cart">
+        <h3>Tu Carrito</h3>
+        <ul id="cart-items">
+            <!-- Productos del carrito se agregarán aquí -->
+        </ul>
+        <div id="total">
+            Total: $<span id="total-price">0</span> MXN
+        </div>
+        <button class="button" onclick="completePurchase()">Finalizar compra</button>
+    </div>
+    
+    <script src="script.js"></script>
+ 
+    <footer>
+        <p>&copy; 2025 CAP MX - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

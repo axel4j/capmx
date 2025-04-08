@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización Sistema de Recolección de Agua Pluvial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="calculo.html">Cálculo</a></li>
+                <li><a href="pres.html">Cotizacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <h1>Bienvenidos a CAP MX</h1>
+    </section>
+    <div class="container">
+        <h1>Cotización Sistema de Recolección de Agua Pluvial</h1>
+        
+        <!-- Ingreso del perímetro -->
+        <label for="perimetro">Ingresa el perímetro en metros:</label>
+        <input type="number" id="perimetro" placeholder="Ej. 10" required>
+        
+        <!-- Selección de tinaco -->
+        <label for="tinaco">Selecciona un tinaco:</label>
+        <select id="tinaco">
+            <option value="3000">Tinaco 3000 L - $3500</option>
+            <option value="1000">Tinaco 1000 L - $1700</option>
+        </select>
+        
+        <!-- Mostrar resumen -->
+        <button onclick="cotizar()">Cotizar</button>
+        
+        <div id="resultado">
+            <h2>Resumen de la Cotización</h2>
+            <p id="detalle"></p>
+            <p id="total"></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 CAP MX - Todos los derechos reservados</p>
+    </footer>
+    <script src="pres.js"></script>
+</body>
+</html>
