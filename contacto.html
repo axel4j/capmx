@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - CAP MX</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+
 </head>
 <body>
     
     <header>
         <nav>
             <ul>
-                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="calculo.html">Cálculo</a></li>
@@ -19,11 +20,24 @@
             </ul>
         </nav>
     </header>
+  <h1>Contacto - Cap MX</h1>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si tienes preguntas, no dudes en contactarnos a través de nuestro correo: contacto@capmx.com</p>
-    </section>
+  <form id="formContacto">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="confirmacion"></div>
+
+  <script src="contacto.js"></script>
 
     <footer>
         <p>&copy; 2025 CAP MX - Todos los derechos reservados</p>
